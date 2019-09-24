@@ -1,0 +1,7 @@
+2019-09-24 16:01:18.306 INSERT INTO product (product_description,product_name,product_price) VALUES (<null>,<'sdsds'>,<'sdsd'>)
+2019-09-24 16:01:30.281 INSERT INTO product (product_description,product_name,product_price) VALUES (<null>,<'dsdsds'>,<'123'>)
+2019-09-24 16:01:30.641 SELECT A0.product_description,A0.product_name,A0.product_price FROM product A0 WHERE A0.product_id = <1>
+2019-09-24 16:01:32.822 SELECT A0.product_description,A0.product_name,A0.product_price FROM product A0 WHERE A0.product_id = <1>
+2019-09-24 16:01:34.314 SELECT A0.product_description,A0.product_name,A0.product_price FROM product A0 WHERE A0.product_id = <1>
+2019-09-24 16:01:34.411 SELECT A0.product_description,A0.product_name,A0.product_price FROM product A0 WHERE A0.product_id = <1>
+2019-09-24 16:01:34.428 UPDATE product SET product_description=<'sddsdsds'> WHERE product_id=<1>
