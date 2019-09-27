@@ -10,9 +10,13 @@ domainapp/dom/impl/ProductObject.class
 domainapp/dom/impl/ProductObjects.class
 domainapp/dom/impl/HelloWorldObjects.class
 domainapp/dom/impl/RoleObject.class
+domainapp/dom/impl/VehicleProductObjects.class
 domainapp/dom/impl/VehicleObjects.class
 domainapp/dom/impl/RoleObjects.class
+domainapp/dom/impl/QVehicleProductObject.class
 domainapp/dom/impl/QRoleObject.class
 domainapp/application/HelloWorldAppManifest.class
+domainapp/dom/impl/VehicleProductId.class
 domainapp/dom/impl/QUserObject.class
 domainapp/dom/impl/HelloWorldObject.class
+domainapp/dom/impl/VehicleProductObject.class

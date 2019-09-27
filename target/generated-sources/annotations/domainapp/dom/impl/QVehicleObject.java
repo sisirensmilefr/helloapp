@@ -27,6 +27,8 @@ public class QVehicleObject extends PersistableExpressionImpl<VehicleObject> imp
         return new QVehicleObject(VehicleObject.class, name, ExpressionType.VARIABLE);
     }
 
+    public final NumericExpression<Long> vehicle_id;
+    public final CollectionExpression vehicleProduct;
     public final StringExpression vehicle_brand_name;
     public final StringExpression vehicle_model;
     public final StringExpression vehicle_energy;
@@ -38,6 +40,8 @@ public class QVehicleObject extends PersistableExpressionImpl<VehicleObject> imp
     public QVehicleObject(PersistableExpression parent, String name, int depth)
     {
         super(parent, name);
+        this.vehicle_id = new NumericExpressionImpl<Long>(this, "vehicle_id");
+        this.vehicleProduct = new CollectionExpressionImpl(this, "vehicleProduct");
         this.vehicle_brand_name = new StringExpressionImpl(this, "vehicle_brand_name");
         this.vehicle_model = new StringExpressionImpl(this, "vehicle_model");
         this.vehicle_energy = new StringExpressionImpl(this, "vehicle_energy");
@@ -50,6 +54,8 @@ public class QVehicleObject extends PersistableExpressionImpl<VehicleObject> imp
     public QVehicleObject(Class type, String name, ExpressionType exprType)
     {
         super(type, name, exprType);
+        this.vehicle_id = new NumericExpressionImpl<Long>(this, "vehicle_id");
+        this.vehicleProduct = new CollectionExpressionImpl(this, "vehicleProduct");
         this.vehicle_brand_name = new StringExpressionImpl(this, "vehicle_brand_name");
         this.vehicle_model = new StringExpressionImpl(this, "vehicle_model");
         this.vehicle_energy = new StringExpressionImpl(this, "vehicle_energy");

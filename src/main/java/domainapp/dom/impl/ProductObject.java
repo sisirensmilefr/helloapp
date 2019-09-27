@@ -18,9 +18,19 @@
  */
 package domainapp.dom.impl;
 
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.jdo.annotations.Column;
+import javax.jdo.annotations.Element;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
-import javax.jdo.annotations.VersionStrategy;
+import javax.jdo.annotations.Join;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
 
 import com.google.common.collect.ComparisonChain;
 
@@ -31,7 +41,6 @@ import org.apache.isis.applib.annotation.DomainObject;
 import org.apache.isis.applib.annotation.DomainObjectLayout;
 import org.apache.isis.applib.annotation.Editing;
 import org.apache.isis.applib.annotation.Parameter;
-import org.apache.isis.applib.annotation.ParameterLayout;
 import org.apache.isis.applib.annotation.Property;
 import org.apache.isis.applib.annotation.Publishing;
 import org.apache.isis.applib.annotation.SemanticsOf;
@@ -40,25 +49,34 @@ import org.apache.isis.applib.services.message.MessageService;
 import org.apache.isis.applib.services.repository.RepositoryService;
 import org.apache.isis.applib.services.title.TitleService;
 
-@javax.jdo.annotations.PersistenceCapable(identityType = IdentityType.DATASTORE , schema = "cetelem_proto", table= "product" )
-@javax.jdo.annotations.DatastoreIdentity(strategy = IdGeneratorStrategy.IDENTITY, column = "product_id")
-//@javax.jdo.annotations.Version(strategy= VersionStrategy.DATE_TIME, column ="version")
-@javax.jdo.annotations.Unique(name="ProductObject_product_name_UNQ", members = {"product_name"})
+@PersistenceCapable(identityType = IdentityType.DATASTORE , schema = "test", table= "product" )
+//@javax.jdo.annotations.Unique(name="ProductObject_product_name_UNQ", members = {"product_name"})
 @DomainObject(auditing = Auditing.ENABLED)
 @DomainObjectLayout()  // causes UI events to be triggered
-public class ProductObject implements Comparable<ProductObject> {
+public class ProductObject implements  Serializable{
+//Comparable<ProductObject>,
+	
+	@PrimaryKey
+	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
+	long product_id;
+	
 
+	@Persistent(defaultFetchGroup = "true", mappedBy = "product")
+	private Set<VehicleProductObject> vehicleProduct = new HashSet<>(); 
+	
+	
+	
+	
     public ProductObject(final String product_name) {
         this.product_name = product_name;
     }
 
     public ProductObject(String product_name, String product_price) {
     	this.product_name = product_name;
-
     	this.product_price = product_price;
 	}
 
-	@javax.jdo.annotations.Column(allowsNull = "false", length = 40)
+    
     @Property(editing = Editing.DISABLED)
     @Title(prepend = "Object: ")
     private String product_name;
@@ -66,8 +84,6 @@ public class ProductObject implements Comparable<ProductObject> {
     public void setProduct_name(final String product_name) { this.product_name = product_name; }
     
 
-   
-    
     @javax.jdo.annotations.Column(allowsNull = "true", length = 4000)
     @Property(editing = Editing.ENABLED)
     @Title(prepend = "Object: ")
@@ -82,7 +98,8 @@ public class ProductObject implements Comparable<ProductObject> {
     private String product_description;
     public String getProduct_description() { return product_description; }
     public void setProduct_description(final String product_description) { this.product_description = product_description; }
-
+  
+    
     @Action(semantics = SemanticsOf.IDEMPOTENT, command = CommandReification.ENABLED, publishing = Publishing.ENABLED)
     public ProductObject updateProduct_brand_name(
             @Parameter(maxLength = 40)
@@ -108,12 +125,12 @@ public class ProductObject implements Comparable<ProductObject> {
         return getProduct_name();
     }
 
-    @Override
-    public int compareTo(final ProductObject other) {
-        return ComparisonChain.start()
-                .compare(this.getProduct_name(), other.getProduct_name())
-                .result();
-    }
+//    @Override
+//    public int compareTo(final ProductObject other) {
+//        return ComparisonChain.start()
+//                .compare(this.getProduct_name(), other.getProduct_name())
+//                .result();
+//    }
 
 
     @javax.jdo.annotations.NotPersistent
