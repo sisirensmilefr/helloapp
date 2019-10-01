@@ -56,7 +56,9 @@ public class VehicleObjects {
             @Parameter(maxLength = 40)
             @ParameterLayout(named = "Vehicle_price")
             final String vehicle_price
+
             ) {
+   
         return repositoryService.persist(new VehicleObject(vehicle_brand_name,vehicle_brand_name,vehicle_model,vehicle_price));
     }
 

@@ -45,6 +45,8 @@
                                 <c:property id="vehicle_description" namedEscaped="true"/>
                                 <c:property id="vehicle_picture_url" namedEscaped="true"/>
                                 <c:property id="vehicle_transmission" namedEscaped="true"/>
+                                <c:property id="product_id" namedEscaped="true"/>
+                                
                             </c:fieldSet>
                         </bs3:col>
                     </bs3:row>

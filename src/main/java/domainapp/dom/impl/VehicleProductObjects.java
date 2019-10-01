@@ -30,8 +30,6 @@ import org.apache.isis.applib.annotation.SemanticsOf;
 import org.apache.isis.applib.services.jdosupport.IsisJdoSupport;
 import org.apache.isis.applib.services.repository.RepositoryService;
 
-
-
 @DomainService(
         nature = NatureOfService.VIEW_MENU_ONLY,
         objectType = "helloapp.VehiclesProductsObjects"
@@ -41,21 +39,24 @@ public class VehicleProductObjects {
     @Action(semantics = SemanticsOf.NON_IDEMPOTENT)
     @MemberOrder(sequence = "1")
     public VehicleProductObject create(
+//          @Parameter(maxLength = 11)
+            @ParameterLayout(named = "Vehicle")                    
+            final VehicleObject vehicle,
+//          @Parameter(maxLength = 11)
+            @ParameterLayout(named = "Product")                    
+            final ProductObject product,
             @Parameter(maxLength = 11)
-            @ParameterLayout(named = "vehicle_id")
-            final int vehicle_id,
-            @Parameter(maxLength = 11)
-            @ParameterLayout(named = "product_id")
-            final int product_id
+            @ParameterLayout(named = "Price")                    
+            final int price
             ) {
-        return repositoryService.persist(new VehicleProductObject(vehicle_id, product_id));
+        return repositoryService.persist(new VehicleProductObject(vehicle, product, price));
     }
-
-
+	
+	
     @Action(semantics = SemanticsOf.SAFE, restrictTo = RestrictTo.PROTOTYPING)
     @MemberOrder(sequence = "3")
-    public List<VehicleObject> listAll() {
-        return repositoryService.allInstances(VehicleObject.class);
+    public List<VehicleProductObject> listAll() {
+        return repositoryService.allInstances(VehicleProductObject.class);
     }
 
     @javax.inject.Inject

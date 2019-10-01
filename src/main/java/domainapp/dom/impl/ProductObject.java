@@ -49,25 +49,40 @@ import org.apache.isis.applib.services.message.MessageService;
 import org.apache.isis.applib.services.repository.RepositoryService;
 import org.apache.isis.applib.services.title.TitleService;
 
-@PersistenceCapable(identityType = IdentityType.DATASTORE , schema = "test", table= "product" )
-//@javax.jdo.annotations.Unique(name="ProductObject_product_name_UNQ", members = {"product_name"})
+@PersistenceCapable(identityType = IdentityType.DATASTORE , schema = "cetelem_proto", table= "product" )
+@javax.jdo.annotations.Unique(name="ProductObject_product_name_UNQ", members = {"product_name"})
 @DomainObject(auditing = Auditing.ENABLED)
 @DomainObjectLayout()  // causes UI events to be triggered
 public class ProductObject implements  Serializable{
 //Comparable<ProductObject>,
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
 	long product_id;
+	public long getProduct_id() {return product_id;}
+	public void setProduct_id(long product_id) {this.product_id = product_id;}
+
+
+	@Persistent( mappedBy = "product")
+	private Set<VehicleProductObject> vehicleProductObject = new HashSet<>(); 
+	
+    public Set<VehicleProductObject> getVehicleProductObject() {
+		return vehicleProductObject;
+	}
+
+	public void setVehicleProductObject(Set<VehicleProductObject> vehicleProductObject) {
+		this.vehicleProductObject = vehicleProductObject;
+	}
+	
 	
 
-	@Persistent(defaultFetchGroup = "true", mappedBy = "product")
-	private Set<VehicleProductObject> vehicleProduct = new HashSet<>(); 
-	
-	
-	
-	
-    public ProductObject(final String product_name) {
+	public ProductObject(final String product_name) {
         this.product_name = product_name;
     }
 
@@ -84,7 +99,7 @@ public class ProductObject implements  Serializable{
     public void setProduct_name(final String product_name) { this.product_name = product_name; }
     
 
-    @javax.jdo.annotations.Column(allowsNull = "true", length = 4000)
+    @javax.jdo.annotations.Column(allowsNull = "true", length = 40)
     @Property(editing = Editing.ENABLED)
     @Title(prepend = "Object: ")
     private String product_price;
@@ -132,6 +147,7 @@ public class ProductObject implements  Serializable{
 //                .result();
 //    }
 
+    
 
     @javax.jdo.annotations.NotPersistent
     @javax.inject.Inject

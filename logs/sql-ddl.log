@@ -1,144 +1,144 @@
-2019-09-27 14:44:46.623 Column "DELETEME1569588286606.UNUSED" added to internal representation of table.
-2019-09-27 14:44:46.639 Creating table DELETEME1569588286606
-2019-09-27 14:44:46.665 CREATE TABLE DELETEME1569588286606
+2019-10-01 14:52:57.465 Column "DELETEME1569934377448.UNUSED" added to internal representation of table.
+2019-10-01 14:52:57.487 Creating table DELETEME1569934377448
+2019-10-01 14:52:57.531 CREATE TABLE DELETEME1569934377448
 (
     UNUSED INTEGER NOT NULL
 ) ENGINE=INNODB
-2019-09-27 14:44:46.704 Execution Time = 31 ms
-2019-09-27 14:44:46.747 Schema Name could not be determined for this datastore
-2019-09-27 14:44:46.747 Dropping table DELETEME1569588286606
-2019-09-27 14:44:46.747 DROP TABLE DELETEME1569588286606
-2019-09-27 14:44:46.769 Execution Time = 22 ms
-2019-09-27 14:44:47.184 Column "DELETEME1569588287184.UNUSED" added to internal representation of table.
-2019-09-27 14:44:47.185 Creating table DELETEME1569588287184
-2019-09-27 14:44:47.186 CREATE TABLE DELETEME1569588287184
+2019-10-01 14:52:57.569 Execution Time = 37 ms
+2019-10-01 14:52:57.625 Schema Name could not be determined for this datastore
+2019-10-01 14:52:57.625 Dropping table DELETEME1569934377448
+2019-10-01 14:52:57.625 DROP TABLE DELETEME1569934377448
+2019-10-01 14:52:57.641 Execution Time = 16 ms
+2019-10-01 14:52:58.203 Column "DELETEME1569934378203.UNUSED" added to internal representation of table.
+2019-10-01 14:52:58.205 Creating table DELETEME1569934378203
+2019-10-01 14:52:58.206 CREATE TABLE DELETEME1569934378203
 (
     UNUSED INTEGER NOT NULL
 ) ENGINE=INNODB
-2019-09-27 14:44:47.216 Execution Time = 30 ms
-2019-09-27 14:44:47.225 Schema Name could not be determined for this datastore
-2019-09-27 14:44:47.225 Dropping table DELETEME1569588287184
-2019-09-27 14:44:47.225 DROP TABLE DELETEME1569588287184
-2019-09-27 14:44:47.248 Execution Time = 23 ms
-2019-09-27 14:44:47.472 Column "HelloWorldObject.id" added to internal representation of table.
-2019-09-27 14:44:47.473 Field [DATASTORE_ID] -> Column(s) [HelloWorldObject.id] using mapping of type "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-2019-09-27 14:44:47.475 Column "vehicle_product.vehicle_product_ID" added to internal representation of table.
-2019-09-27 14:44:47.476 Field [DATASTORE_ID] -> Column(s) [vehicle_product.vehicle_product_ID] using mapping of type "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-2019-09-27 14:44:47.476 Column "product.product_id" added to internal representation of table.
-2019-09-27 14:44:47.477 Member domainapp.dom.impl.ProductObject.product_id uses IDENTITY strategy and rather than using memberType of long for the column type, using class java.lang.Long since the datastore requires that
-2019-09-27 14:44:47.477 Field [domainapp.dom.impl.ProductObject.product_id] -> Column(s) [product.product_id] using mapping of type "org.datanucleus.store.rdbms.mapping.java.LongMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-2019-09-27 14:44:47.477 Column "`role`.role_id" added to internal representation of table.
-2019-09-27 14:44:47.478 Field [DATASTORE_ID] -> Column(s) [`role`.role_id] using mapping of type "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-2019-09-27 14:44:47.478 Column "`user`.user_id" added to internal representation of table.
-2019-09-27 14:44:47.478 Field [DATASTORE_ID] -> Column(s) [`user`.user_id] using mapping of type "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-2019-09-27 14:44:47.478 Column "vehicle.vehicle_id" added to internal representation of table.
-2019-09-27 14:44:47.478 Member domainapp.dom.impl.VehicleObject.vehicle_id uses IDENTITY strategy and rather than using memberType of long for the column type, using class java.lang.Long since the datastore requires that
-2019-09-27 14:44:47.479 Field [domainapp.dom.impl.VehicleObject.vehicle_id] -> Column(s) [vehicle.vehicle_id] using mapping of type "org.datanucleus.store.rdbms.mapping.java.LongMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-2019-09-27 14:44:47.479 Table HelloWorldObject will manage the persistence of the fields for class domainapp.dom.impl.HelloWorldObject (inheritance strategy="new-table") 
-2019-09-27 14:44:47.480 Column "HelloWorldObject.age" added to internal representation of table.
-2019-09-27 14:44:47.482 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.482 Field [domainapp.dom.impl.HelloWorldObject.age] -> Column(s) [HelloWorldObject.age] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.482 Column "HelloWorldObject.nom" added to internal representation of table.
-2019-09-27 14:44:47.485 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.485 Field [domainapp.dom.impl.HelloWorldObject.nom] -> Column(s) [HelloWorldObject.nom] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.490 Column "HelloWorldObject.notes" added to internal representation of table.
-2019-09-27 14:44:47.490 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.491 Field [domainapp.dom.impl.HelloWorldObject.notes] -> Column(s) [HelloWorldObject.notes] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.491 Table/View HelloWorldObject has been initialised
-2019-09-27 14:44:47.491 Table product will manage the persistence of the fields for class domainapp.dom.impl.ProductObject (inheritance strategy="new-table") 
-2019-09-27 14:44:47.497 Field [domainapp.dom.impl.ProductObject.VehicleProduct] -> Column(s) [[none]] using mapping of type "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
-2019-09-27 14:44:47.498 Column "product.product_description" added to internal representation of table.
-2019-09-27 14:44:47.501 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.501 Field [domainapp.dom.impl.ProductObject.product_description] -> Column(s) [product.product_description] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.501 Column "product.product_name" added to internal representation of table.
-2019-09-27 14:44:47.502 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.502 Field [domainapp.dom.impl.ProductObject.product_name] -> Column(s) [product.product_name] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.503 Column "product.product_price" added to internal representation of table.
-2019-09-27 14:44:47.503 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.503 Field [domainapp.dom.impl.ProductObject.product_price] -> Column(s) [product.product_price] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.504 Table/View product has been initialised
-2019-09-27 14:44:47.504 Table vehicle will manage the persistence of the fields for class domainapp.dom.impl.VehicleObject (inheritance strategy="new-table") 
-2019-09-27 14:44:47.504 Field [domainapp.dom.impl.VehicleObject.VehicleProduct] -> Column(s) [[none]] using mapping of type "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
-2019-09-27 14:44:47.505 Column "vehicle.vehicle_brand_name" added to internal representation of table.
-2019-09-27 14:44:47.505 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.506 Field [domainapp.dom.impl.VehicleObject.vehicle_brand_name] -> Column(s) [vehicle.vehicle_brand_name] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.506 Column "vehicle.vehicle_description" added to internal representation of table.
-2019-09-27 14:44:47.506 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.511 Field [domainapp.dom.impl.VehicleObject.vehicle_description] -> Column(s) [vehicle.vehicle_description] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.512 Column "vehicle.vehicle_energy" added to internal representation of table.
-2019-09-27 14:44:47.513 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.513 Field [domainapp.dom.impl.VehicleObject.vehicle_energy] -> Column(s) [vehicle.vehicle_energy] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.514 Column "vehicle.vehicle_model" added to internal representation of table.
-2019-09-27 14:44:47.514 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.514 Field [domainapp.dom.impl.VehicleObject.vehicle_model] -> Column(s) [vehicle.vehicle_model] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.515 Column "vehicle.vehicle_picture_url" added to internal representation of table.
-2019-09-27 14:44:47.515 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.516 Field [domainapp.dom.impl.VehicleObject.vehicle_picture_url] -> Column(s) [vehicle.vehicle_picture_url] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.516 Column "vehicle.vehicle_price" added to internal representation of table.
-2019-09-27 14:44:47.516 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.516 Field [domainapp.dom.impl.VehicleObject.vehicle_price] -> Column(s) [vehicle.vehicle_price] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.517 Column "vehicle.vehicle_transmission" added to internal representation of table.
-2019-09-27 14:44:47.517 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.517 Field [domainapp.dom.impl.VehicleObject.vehicle_transmission] -> Column(s) [vehicle.vehicle_transmission] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.518 Table/View vehicle has been initialised
-2019-09-27 14:44:47.518 Table `user` will manage the persistence of the fields for class domainapp.dom.impl.UserObject (inheritance strategy="new-table") 
-2019-09-27 14:44:47.518 Column "`user`.user_firstname" added to internal representation of table.
-2019-09-27 14:44:47.518 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.518 Field [domainapp.dom.impl.UserObject.user_firstname] -> Column(s) [`user`.user_firstname] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.519 Column "`user`.user_lastname" added to internal representation of table.
-2019-09-27 14:44:47.519 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.519 Field [domainapp.dom.impl.UserObject.user_lastname] -> Column(s) [`user`.user_lastname] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.520 Column "`user`.user_password" added to internal representation of table.
-2019-09-27 14:44:47.521 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.521 Field [domainapp.dom.impl.UserObject.user_password] -> Column(s) [`user`.user_password] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.522 Column "`user`.user_role" added to internal representation of table.
-2019-09-27 14:44:47.522 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.522 Field [domainapp.dom.impl.UserObject.user_role] -> Column(s) [`user`.user_role] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.523 Column "`user`.user_username" added to internal representation of table.
-2019-09-27 14:44:47.523 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.523 Field [domainapp.dom.impl.UserObject.user_username] -> Column(s) [`user`.user_username] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.523 Table/View `user` has been initialised
-2019-09-27 14:44:47.523 Table vehicle_product will manage the persistence of the fields for class domainapp.dom.impl.VehicleProductObject (inheritance strategy="new-table") 
-2019-09-27 14:44:47.523 Column "vehicle_product.price" added to internal representation of table.
-2019-09-27 14:44:47.523 Field [domainapp.dom.impl.VehicleProductObject.price] -> Column(s) [vehicle_product.price] using mapping of type "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
-2019-09-27 14:44:47.524 Column "vehicle_product.product_id" added to internal representation of table.
-2019-09-27 14:44:47.524 Field [domainapp.dom.impl.VehicleProductObject.product_id] -> Column(s) [vehicle_product.product_id] using mapping of type "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
-2019-09-27 14:44:47.524 Column "vehicle_product.vehicle_id" added to internal representation of table.
-2019-09-27 14:44:47.524 Field [domainapp.dom.impl.VehicleProductObject.vehicle_id] -> Column(s) [vehicle_product.vehicle_id] using mapping of type "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
-2019-09-27 14:44:47.525 Table/View vehicle_product has been initialised
-2019-09-27 14:44:47.525 Table `role` will manage the persistence of the fields for class domainapp.dom.impl.RoleObject (inheritance strategy="new-table") 
-2019-09-27 14:44:47.525 Column "`role`.role_description" added to internal representation of table.
-2019-09-27 14:44:47.526 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.526 Field [domainapp.dom.impl.RoleObject.role_description] -> Column(s) [`role`.role_description] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.526 Column "`role`.role_name" added to internal representation of table.
-2019-09-27 14:44:47.526 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
-2019-09-27 14:44:47.526 Field [domainapp.dom.impl.RoleObject.role_name] -> Column(s) [`role`.role_name] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2019-09-27 14:44:47.526 Table/View `role` has been initialised
-2019-09-27 14:44:47.529 Schema Transaction started with connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@5a79bb95" with isolation "serializable"
-2019-09-27 14:44:47.549 Check of existence of HelloWorldObject returned table type of TABLE
-2019-09-27 14:44:47.550 Loading column info for table(s) "product, role, vehicle_product, HelloWorldObject, user, vehicle" in Catalog "", Schema ""
-2019-09-27 14:44:47.962 Column info loaded for Catalog "", Schema "", 6 tables, time = 412 ms
-2019-09-27 14:44:47.962 Column info retrieved for table "HelloWorldObject" : 4 columns found
-2019-09-27 14:44:47.965 Check of existence of product returned table type of TABLE
-2019-09-27 14:44:47.968 Check of existence of vehicle returned table type of TABLE
-2019-09-27 14:44:47.970 Check of existence of `user` returned table type of SYSTEM TABLE
-2019-09-27 14:44:47.977 Check of existence of vehicle_product returned table type of TABLE
-2019-09-27 14:44:47.988 Check of existence of `role` returned table type of TABLE
-2019-09-27 14:44:48.017 Validating 2 index(es) for table HelloWorldObject
-2019-09-27 14:44:48.027 Validating 0 foreign key(s) for table HelloWorldObject
-2019-09-27 14:44:48.036 Validating 2 unique key(s) for table HelloWorldObject
-2019-09-27 14:44:48.039 Validating 2 index(es) for table product
-2019-09-27 14:44:48.042 Validating 0 foreign key(s) for table product
-2019-09-27 14:44:48.046 Validating 2 unique key(s) for table product
-2019-09-27 14:44:48.049 Validating 2 index(es) for table vehicle
-2019-09-27 14:44:48.053 Validating 0 foreign key(s) for table vehicle
-2019-09-27 14:44:48.059 Validating 2 unique key(s) for table vehicle
-2019-09-27 14:44:48.067 Validating 3 index(es) for table `user`
-2019-09-27 14:44:48.071 Validating 0 foreign key(s) for table `user`
-2019-09-27 14:44:48.074 Validating 2 unique key(s) for table `user`
-2019-09-27 14:44:48.078 Validating 1 index(es) for table vehicle_product
-2019-09-27 14:44:48.084 Validating 0 foreign key(s) for table vehicle_product
-2019-09-27 14:44:48.086 Validating 1 unique key(s) for table vehicle_product
-2019-09-27 14:44:48.087 An error occurred while auto-creating schema elements - rolling back
-2019-09-27 14:44:48.087 Schema Transaction rolling back with connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@5a79bb95"
-2019-09-27 14:44:48.087 Schema Transaction closing with connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@5a79bb95"
+2019-10-01 14:52:58.234 Execution Time = 28 ms
+2019-10-01 14:52:58.238 Schema Name could not be determined for this datastore
+2019-10-01 14:52:58.239 Dropping table DELETEME1569934378203
+2019-10-01 14:52:58.239 DROP TABLE DELETEME1569934378203
+2019-10-01 14:52:58.255 Execution Time = 16 ms
+2019-10-01 14:52:58.487 Column "HelloWorldObject.id" added to internal representation of table.
+2019-10-01 14:52:58.488 Field [DATASTORE_ID] -> Column(s) [HelloWorldObject.id] using mapping of type "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+2019-10-01 14:52:58.490 Column "vehicle.vehicle_id" added to internal representation of table.
+2019-10-01 14:52:58.491 Member domainapp.dom.impl.VehicleObject.vehicle_id uses IDENTITY strategy and rather than using memberType of long for the column type, using class java.lang.Long since the datastore requires that
+2019-10-01 14:52:58.491 Field [domainapp.dom.impl.VehicleObject.vehicle_id] -> Column(s) [vehicle.vehicle_id] using mapping of type "org.datanucleus.store.rdbms.mapping.java.LongMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+2019-10-01 14:52:58.492 Column "product.product_id" added to internal representation of table.
+2019-10-01 14:52:58.492 Member domainapp.dom.impl.ProductObject.product_id uses IDENTITY strategy and rather than using memberType of long for the column type, using class java.lang.Long since the datastore requires that
+2019-10-01 14:52:58.492 Field [domainapp.dom.impl.ProductObject.product_id] -> Column(s) [product.product_id] using mapping of type "org.datanucleus.store.rdbms.mapping.java.LongMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+2019-10-01 14:52:58.493 Column "vehicle_product.PRODUCT" added to internal representation of table.
+2019-10-01 14:52:58.494 Field [domainapp.dom.impl.VehicleProductObject.product] -> Column(s) [vehicle_product.PRODUCT] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+2019-10-01 14:52:58.494 Column "vehicle_product.VEHICLE" added to internal representation of table.
+2019-10-01 14:52:58.494 Field [domainapp.dom.impl.VehicleProductObject.vehicle] -> Column(s) [vehicle_product.VEHICLE] using mapping of type "org.datanucleus.store.rdbms.mapping.java.PersistableMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+2019-10-01 14:52:58.494 Column "`role`.role_id" added to internal representation of table.
+2019-10-01 14:52:58.495 Field [DATASTORE_ID] -> Column(s) [`role`.role_id] using mapping of type "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+2019-10-01 14:52:58.495 Column "`user`.user_id" added to internal representation of table.
+2019-10-01 14:52:58.495 Field [DATASTORE_ID] -> Column(s) [`user`.user_id] using mapping of type "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+2019-10-01 14:52:58.496 Table HelloWorldObject will manage the persistence of the fields for class domainapp.dom.impl.HelloWorldObject (inheritance strategy="new-table") 
+2019-10-01 14:52:58.496 Column "HelloWorldObject.age" added to internal representation of table.
+2019-10-01 14:52:58.498 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.500 Field [domainapp.dom.impl.HelloWorldObject.age] -> Column(s) [HelloWorldObject.age] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.505 Column "HelloWorldObject.nom" added to internal representation of table.
+2019-10-01 14:52:58.505 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.505 Field [domainapp.dom.impl.HelloWorldObject.nom] -> Column(s) [HelloWorldObject.nom] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.505 Column "HelloWorldObject.notes" added to internal representation of table.
+2019-10-01 14:52:58.505 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.505 Field [domainapp.dom.impl.HelloWorldObject.notes] -> Column(s) [HelloWorldObject.notes] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.506 Table/View HelloWorldObject has been initialised
+2019-10-01 14:52:58.506 Table product will manage the persistence of the fields for class domainapp.dom.impl.ProductObject (inheritance strategy="new-table") 
+2019-10-01 14:52:58.506 Column "product.product_description" added to internal representation of table.
+2019-10-01 14:52:58.506 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.506 Field [domainapp.dom.impl.ProductObject.product_description] -> Column(s) [product.product_description] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.507 Column "product.product_name" added to internal representation of table.
+2019-10-01 14:52:58.507 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.507 Field [domainapp.dom.impl.ProductObject.product_name] -> Column(s) [product.product_name] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.507 Column "product.product_price" added to internal representation of table.
+2019-10-01 14:52:58.508 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.509 Field [domainapp.dom.impl.ProductObject.product_price] -> Column(s) [product.product_price] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.513 Field [domainapp.dom.impl.ProductObject.vehicleProductObject] -> Column(s) [[none]] using mapping of type "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
+2019-10-01 14:52:58.517 Table/View product has been initialised
+2019-10-01 14:52:58.517 Table vehicle will manage the persistence of the fields for class domainapp.dom.impl.VehicleObject (inheritance strategy="new-table") 
+2019-10-01 14:52:58.518 Field [domainapp.dom.impl.VehicleObject.vehicleProductObject] -> Column(s) [[none]] using mapping of type "org.datanucleus.store.rdbms.mapping.java.CollectionMapping" ()
+2019-10-01 14:52:58.518 Column "vehicle.vehicle_brand_name" added to internal representation of table.
+2019-10-01 14:52:58.518 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.519 Field [domainapp.dom.impl.VehicleObject.vehicle_brand_name] -> Column(s) [vehicle.vehicle_brand_name] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.520 Column "vehicle.vehicle_description" added to internal representation of table.
+2019-10-01 14:52:58.522 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.522 Field [domainapp.dom.impl.VehicleObject.vehicle_description] -> Column(s) [vehicle.vehicle_description] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.525 Column "vehicle.vehicle_energy" added to internal representation of table.
+2019-10-01 14:52:58.527 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.527 Field [domainapp.dom.impl.VehicleObject.vehicle_energy] -> Column(s) [vehicle.vehicle_energy] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.528 Column "vehicle.vehicle_model" added to internal representation of table.
+2019-10-01 14:52:58.528 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.528 Field [domainapp.dom.impl.VehicleObject.vehicle_model] -> Column(s) [vehicle.vehicle_model] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.528 Column "vehicle.vehicle_picture_url" added to internal representation of table.
+2019-10-01 14:52:58.528 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.529 Field [domainapp.dom.impl.VehicleObject.vehicle_picture_url] -> Column(s) [vehicle.vehicle_picture_url] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.529 Column "vehicle.vehicle_price" added to internal representation of table.
+2019-10-01 14:52:58.529 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.529 Field [domainapp.dom.impl.VehicleObject.vehicle_price] -> Column(s) [vehicle.vehicle_price] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.529 Column "vehicle.vehicle_transmission" added to internal representation of table.
+2019-10-01 14:52:58.530 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.530 Field [domainapp.dom.impl.VehicleObject.vehicle_transmission] -> Column(s) [vehicle.vehicle_transmission] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.530 Table/View vehicle has been initialised
+2019-10-01 14:52:58.530 Table `user` will manage the persistence of the fields for class domainapp.dom.impl.UserObject (inheritance strategy="new-table") 
+2019-10-01 14:52:58.530 Column "`user`.user_firstname" added to internal representation of table.
+2019-10-01 14:52:58.530 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.530 Field [domainapp.dom.impl.UserObject.user_firstname] -> Column(s) [`user`.user_firstname] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.531 Column "`user`.user_lastname" added to internal representation of table.
+2019-10-01 14:52:58.531 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.531 Field [domainapp.dom.impl.UserObject.user_lastname] -> Column(s) [`user`.user_lastname] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.532 Column "`user`.user_password" added to internal representation of table.
+2019-10-01 14:52:58.533 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.533 Field [domainapp.dom.impl.UserObject.user_password] -> Column(s) [`user`.user_password] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.533 Column "`user`.user_role" added to internal representation of table.
+2019-10-01 14:52:58.534 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.534 Field [domainapp.dom.impl.UserObject.user_role] -> Column(s) [`user`.user_role] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.534 Column "`user`.user_username" added to internal representation of table.
+2019-10-01 14:52:58.534 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.534 Field [domainapp.dom.impl.UserObject.user_username] -> Column(s) [`user`.user_username] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.535 Table/View `user` has been initialised
+2019-10-01 14:52:58.535 Table vehicle_product will manage the persistence of the fields for class domainapp.dom.impl.VehicleProductObject (inheritance strategy="new-table") 
+2019-10-01 14:52:58.535 Column "vehicle_product.price" added to internal representation of table.
+2019-10-01 14:52:58.535 Field [domainapp.dom.impl.VehicleProductObject.price] -> Column(s) [vehicle_product.price] using mapping of type "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
+2019-10-01 14:52:58.536 Table/View vehicle_product has been initialised
+2019-10-01 14:52:58.536 Table `role` will manage the persistence of the fields for class domainapp.dom.impl.RoleObject (inheritance strategy="new-table") 
+2019-10-01 14:52:58.536 Column "`role`.role_description" added to internal representation of table.
+2019-10-01 14:52:58.536 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.536 Field [domainapp.dom.impl.RoleObject.role_description] -> Column(s) [`role`.role_description] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.536 Column "`role`.role_name" added to internal representation of table.
+2019-10-01 14:52:58.536 Attempt to find JDBC driver 'typeInfo' for jdbc-type=VARCHAR but sql-type=VARCHAR is not found. Using default sql-type for this jdbc-type.
+2019-10-01 14:52:58.537 Field [domainapp.dom.impl.RoleObject.role_name] -> Column(s) [`role`.role_name] using mapping of type "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2019-10-01 14:52:58.537 Table/View `role` has been initialised
+2019-10-01 14:52:58.540 Schema Transaction started with connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@cfbc348" with isolation "serializable"
+2019-10-01 14:52:58.544 Check of existence of HelloWorldObject returned table type of TABLE
+2019-10-01 14:52:58.545 Loading column info for table(s) "product, role, vehicle_product, HelloWorldObject, user, vehicle" in Catalog "", Schema ""
+2019-10-01 14:52:58.695 Column info loaded for Catalog "", Schema "", 6 tables, time = 150 ms
+2019-10-01 14:52:58.695 Column info retrieved for table "HelloWorldObject" : 4 columns found
+2019-10-01 14:52:58.699 Check of existence of product returned table type of TABLE
+2019-10-01 14:52:58.702 Check of existence of vehicle returned table type of TABLE
+2019-10-01 14:52:58.704 Check of existence of `user` returned table type of TABLE
+2019-10-01 14:52:58.710 Check of existence of vehicle_product returned table type of TABLE
+2019-10-01 14:52:58.712 Check of existence of `role` returned table type of TABLE
+2019-10-01 14:52:58.739 Validating 2 index(es) for table HelloWorldObject
+2019-10-01 14:52:58.748 Validating 0 foreign key(s) for table HelloWorldObject
+2019-10-01 14:52:58.751 Validating 2 unique key(s) for table HelloWorldObject
+2019-10-01 14:52:58.756 Validating 2 index(es) for table product
+2019-10-01 14:52:58.759 Validating 0 foreign key(s) for table product
+2019-10-01 14:52:58.765 Validating 2 unique key(s) for table product
+2019-10-01 14:52:58.769 Validating 2 index(es) for table vehicle
+2019-10-01 14:52:58.772 Validating 0 foreign key(s) for table vehicle
+2019-10-01 14:52:58.775 Validating 2 unique key(s) for table vehicle
+2019-10-01 14:52:58.778 Validating 2 index(es) for table `user`
+2019-10-01 14:52:58.782 Validating 0 foreign key(s) for table `user`
+2019-10-01 14:52:58.788 Validating 2 unique key(s) for table `user`
+2019-10-01 14:52:58.799 Validating 2 index(es) for table vehicle_product
+2019-10-01 14:52:58.806 Validating 2 foreign key(s) for table vehicle_product
+2019-10-01 14:52:58.808 Validating 1 unique key(s) for table vehicle_product
+2019-10-01 14:52:58.812 Validating 2 index(es) for table `role`
+2019-10-01 14:52:58.814 Validating 0 foreign key(s) for table `role`
+2019-10-01 14:52:58.816 Validating 2 unique key(s) for table `role`
+2019-10-01 14:52:58.816 Schema Transaction committing with connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@cfbc348"
+2019-10-01 14:52:58.817 Schema Transaction closing with connection "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@cfbc348"

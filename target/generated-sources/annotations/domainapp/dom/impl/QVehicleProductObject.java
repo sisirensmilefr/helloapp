@@ -27,23 +27,37 @@ public class QVehicleProductObject extends PersistableExpressionImpl<VehicleProd
         return new QVehicleProductObject(VehicleProductObject.class, name, ExpressionType.VARIABLE);
     }
 
-    public final NumericExpression<Integer> vehicle_id;
-    public final NumericExpression<Integer> product_id;
+    public final domainapp.dom.impl.QProductObject product;
+    public final domainapp.dom.impl.QVehicleObject vehicle;
     public final NumericExpression<Integer> price;
 
     public QVehicleProductObject(PersistableExpression parent, String name, int depth)
     {
         super(parent, name);
-        this.vehicle_id = new NumericExpressionImpl<Integer>(this, "vehicle_id");
-        this.product_id = new NumericExpressionImpl<Integer>(this, "product_id");
+        if (depth > 0)
+        {
+            this.product = new domainapp.dom.impl.QProductObject(this, "product", depth-1);
+        }
+        else
+        {
+            this.product = null;
+        }
+        if (depth > 0)
+        {
+            this.vehicle = new domainapp.dom.impl.QVehicleObject(this, "vehicle", depth-1);
+        }
+        else
+        {
+            this.vehicle = null;
+        }
         this.price = new NumericExpressionImpl<Integer>(this, "price");
     }
 
     public QVehicleProductObject(Class type, String name, ExpressionType exprType)
     {
         super(type, name, exprType);
-        this.vehicle_id = new NumericExpressionImpl<Integer>(this, "vehicle_id");
-        this.product_id = new NumericExpressionImpl<Integer>(this, "product_id");
+        this.product = new domainapp.dom.impl.QProductObject(this, "product", 5);
+        this.vehicle = new domainapp.dom.impl.QVehicleObject(this, "vehicle", 5);
         this.price = new NumericExpressionImpl<Integer>(this, "price");
     }
 }

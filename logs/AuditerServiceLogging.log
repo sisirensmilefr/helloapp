@@ -1,0 +1,12 @@
+2019-10-01 14:57:32.085 dbcaf43a-0c3b-43b3-bf2e-7e20b374b326,0: cetelem_proto.product:l_1 by sven, product_price: [NEW] -> nnnnne
+2019-10-01 14:57:32.086 dbcaf43a-0c3b-43b3-bf2e-7e20b374b326,0: cetelem_proto.product:l_1 by sven, product_description: [NEW] -> null
+2019-10-01 14:57:32.086 dbcaf43a-0c3b-43b3-bf2e-7e20b374b326,0: cetelem_proto.product:l_1 by sven, product_id: [NEW] -> 1
+2019-10-01 14:57:32.086 dbcaf43a-0c3b-43b3-bf2e-7e20b374b326,0: cetelem_proto.product:l_1 by sven, product_name: [NEW] -> fdfd
+2019-10-01 14:57:59.721 ba552cde-11e1-4858-b928-23d683b83820,0: cetelem_proto.vehicle:l_1 by sven, vehicle_brand_name: [NEW] -> fdfd
+2019-10-01 14:57:59.723 ba552cde-11e1-4858-b928-23d683b83820,0: cetelem_proto.vehicle:l_1 by sven, vehicle_model: [NEW] -> ninim
+2019-10-01 14:57:59.723 ba552cde-11e1-4858-b928-23d683b83820,0: cetelem_proto.vehicle:l_1 by sven, vehicle_energy: [NEW] -> fdfd
+2019-10-01 14:57:59.723 ba552cde-11e1-4858-b928-23d683b83820,0: cetelem_proto.vehicle:l_1 by sven, vehicle_price: [NEW] -> 111
+2019-10-01 14:57:59.723 ba552cde-11e1-4858-b928-23d683b83820,0: cetelem_proto.vehicle:l_1 by sven, vehicle_description: [NEW] -> null
+2019-10-01 14:57:59.723 ba552cde-11e1-4858-b928-23d683b83820,0: cetelem_proto.vehicle:l_1 by sven, vehicle_picture_url: [NEW] -> null
+2019-10-01 14:57:59.723 ba552cde-11e1-4858-b928-23d683b83820,0: cetelem_proto.vehicle:l_1 by sven, vehicle_transmission: [NEW] -> null
+2019-10-01 14:57:59.723 ba552cde-11e1-4858-b928-23d683b83820,0: cetelem_proto.vehicle:l_1 by sven, vehicle_id: [NEW] -> 1

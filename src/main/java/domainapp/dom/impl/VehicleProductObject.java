@@ -45,38 +45,49 @@ import org.apache.isis.applib.services.message.MessageService;
 import org.apache.isis.applib.services.repository.RepositoryService;
 import org.apache.isis.applib.services.title.TitleService;
 
-@PersistenceCapable(identityType = IdentityType.DATASTORE,objectIdClass=VehicleProductId.class, schema = "test", table = "vehicle_product")
+@PersistenceCapable(identityType = IdentityType.DATASTORE, objectIdClass=VehicleProductId.class, schema = "cetelem_proto", table = "vehicle_product")
 //@javax.jdo.annotations.DatastoreIdentity(strategy = IdGeneratorStrategy.IDENTITY, column = "vehicle_product_id")
 //@javax.jdo.annotations.Version(strategy= VersionStrategy.DATE_TIME, column ="version")
 
 @DomainObject(auditing = Auditing.ENABLED)
 @DomainObjectLayout() // causes UI events to be triggered
 public class VehicleProductObject implements Serializable  {
-//	 Comparable<VehicleProductObject>,
-	public VehicleProductObject(final int vehicle_id, final int product_id) {
-		this.vehicle_id = vehicle_id;
-		this.product_id = product_id;
+
+	
+	
+	@PrimaryKey
+	@Column (name="PRODUCT")
+	private ProductObject product; 	
+    public ProductObject getProduct() {
+		return product;
+	}
+	public void setProduct(ProductObject product) {
+		this.product = product;
+	}
+	
+	
+//	public void addVehicle(VehicleObject v) {		
+//		product.getVehicleObject().add(v);
+//	}
+	
+
+	@PrimaryKey
+	@Column (name="VEHICLE")
+	private VehicleObject vehicle; 
+    public VehicleObject getVehicle() {
+		return vehicle;
+	}
+	public void setVehicle(VehicleObject vehicle) {
+		this.vehicle = vehicle;
 	}
 
-	@PrimaryKey
-	@Column(allowsNull = "false")
-	@Property(editing = Editing.DISABLED)
-	@Title(prepend = "Object: ")
-	@Persistent(defaultFetchGroup = "true", dependent = "false")
-	private int vehicle_id;
-	public int getVehicle_id() {return vehicle_id;}
-	public void setVehicle_id(int vehicle_id) {this.vehicle_id = vehicle_id;}
+    public VehicleProductObject(VehicleObject vehicle, ProductObject product, int price) {
+    	this.product=product;
+    	this.vehicle = vehicle;
+    	this.price = price;
+	}
+    
 
-	@PrimaryKey
-	@Column(allowsNull = "true")
-	@Property(editing = Editing.ENABLED)
-	@Title(prepend = "Object: ")
-	@Persistent(defaultFetchGroup = "true", dependent = "false")
-	private int product_id;
-	public int getProduct_id() {return product_id;}
-	public void setProduct_id(int product_id) {this.product_id = product_id;}
-	
-	
 	@Column(allowsNull = "true")
 	@Property(editing = Editing.ENABLED)
 	@Title(prepend = "Object: ")

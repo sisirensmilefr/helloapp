@@ -23,6 +23,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.jdo.annotations.Column;
 import javax.jdo.annotations.Element;
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.IdentityType;
@@ -49,10 +50,19 @@ import org.apache.isis.applib.services.repository.RepositoryService;
 import org.apache.isis.applib.services.title.TitleService;
 import org.omg.CORBA.INTERNAL;
 
-@PersistenceCapable(identityType = IdentityType.DATASTORE, schema = "test", table= "vehicle" )
-//@javax.jdo.annotations.Unique(name="VehicleObject_vehicle_brand_name_UNQ", members = {"vehicle_brand_name"})
+@PersistenceCapable(identityType = IdentityType.DATASTORE, schema = "cetelem_proto", table= "vehicle" )
+@javax.jdo.annotations.Unique(name="VehicleObject_vehicle_brand_name_UNQ", members = {"vehicle_brand_name"})
 @DomainObject(auditing = Auditing.ENABLED)
 @DomainObjectLayout()  // causes UI events to be triggered
+//@javax.jdo.annotations.Queries( {
+//    @javax.jdo.annotations.Query(
+//            name = "findProductList", language = "JDOQL",
+//            value = "SELECT "
+//                    + "FROM todoapp.dom.todoitem.ToDoItem "
+//                    + "WHERE atPath.indexOf(:atPath) == 0 "
+//                    + "   && complete == :complete")
+//    
+//})
 
 public class VehicleObject implements Serializable {
 // Comparable<VehicleObject>,
@@ -60,21 +70,31 @@ public class VehicleObject implements Serializable {
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
 	long vehicle_id;
+	public long getVehicle_id() {return vehicle_id;}
+	public void setVehicle_id(long vehicle_id) {this.vehicle_id = vehicle_id;}
 	
-
-	@Persistent(defaultFetchGroup = "true", mappedBy = "vehicle")
-	private Set<VehicleProductObject> vehicleProduct = new HashSet<>(); 
 	
-
-    public VehicleObject(final String vehicle_brand_name) {
+	@Persistent( mappedBy = "vehicle")
+	private Set<VehicleProductObject> vehicleProductObject = new HashSet<>(); 
+	
+	public Set<VehicleProductObject> getVehicleProductObject() {
+		return vehicleProductObject;
+	}
+	public void setVehicleProductObject(Set<VehicleProductObject> vehicleProductObject) {
+		this.vehicleProductObject = vehicleProductObject;
+	}
+	
+	
+	public VehicleObject(final String vehicle_brand_name) {
         this.vehicle_brand_name = vehicle_brand_name;
     }
-
+	
     public VehicleObject(String vehicle_brand_name, String vehicle_energy, String vehicle_model, String vehicle_price) {
     	this.vehicle_brand_name = vehicle_brand_name;
     	this.vehicle_energy = vehicle_energy;
     	this.vehicle_model = vehicle_model;
     	this.vehicle_price = vehicle_price;
+
 	}
     
 
@@ -87,7 +107,7 @@ public class VehicleObject implements Serializable {
     public void setVehicle_brand_name(final String vehicle_brand_name) { this.vehicle_brand_name = vehicle_brand_name; }
     
 
-    @javax.jdo.annotations.Column(allowsNull = "true", length = 4000)
+    @javax.jdo.annotations.Column(allowsNull = "true", length = 50)
     @Property(editing = Editing.ENABLED)
     @Title(prepend = "Object: ")
     @Persistent
@@ -95,7 +115,7 @@ public class VehicleObject implements Serializable {
     public String getVehicle_model() { return vehicle_model; }
     public void setVehicle_model(final String vehicle_model) { this.vehicle_model = vehicle_model; }
     
-    @javax.jdo.annotations.Column(allowsNull = "true", length = 4000)
+    @javax.jdo.annotations.Column(allowsNull = "true", length = 40)
     @Property(editing = Editing.ENABLED)
     @Title(prepend = "Object: ")
     @Persistent
@@ -103,7 +123,7 @@ public class VehicleObject implements Serializable {
     public String getVehicle_energy() { return vehicle_energy; }
     public void setVehicle_energy(final String vehicle_energy) { this.vehicle_energy = vehicle_energy; }
     
-    @javax.jdo.annotations.Column(allowsNull = "true", length = 4000)
+    @javax.jdo.annotations.Column(allowsNull = "true", length = 50)
     @Property(editing = Editing.ENABLED)
     @Title(prepend = "Object: ")
     @Persistent
